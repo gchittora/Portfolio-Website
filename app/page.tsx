@@ -66,7 +66,7 @@ export default function Home() {
             className="flex justify-center items-center"
           >
             <Link
-              href="https://drive.google.com/file/d/1FKDxVrr4nuI3uOj6svnIMVUcETfJSoM1/view?usp=share_link"
+              href="https://drive.google.com/file/d/1NWGtw8VzsA5dy4a8OdCLaK9ODXQOXDYI/view?usp=sharing"
               target="_blank"
               className="btn-primary group whitespace-nowrap"
             >
