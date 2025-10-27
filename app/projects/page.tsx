@@ -34,6 +34,24 @@ const projects = [
 
   {
     id: 2,
+    title: 'Centralized IT Alerts Dashboard',
+    description: 'Enterprise monitoring platform consolidating alerts from GitHub, CloudWatch, Pingdom, OpsGenie, SolarWinds Orion, and DPA into a unified dashboard. Built with Python Flask, PostgreSQL, and n8n workflows for real-time alert aggregation.',
+    category: 'DevOps/Monitoring',
+    technologies: ['Python', 'Flask', 'PostgreSQL', 'HTML', 'CSS', 'n8n', 'Cron Jobs', 'API Integration', 'GitHub API', 'AWS CloudWatch', 'Pingdom', 'OpsGenie', 'SolarWinds Orion', 'SolarWinds DPA', 'On-Prem Integration', 'RESTful APIs', 'Database Design', 'Workflow Automation'],
+    features: [
+      'Multi-source alert integration (GitHub, CloudWatch, Pingdom, OpsGenie, SolarWinds)',
+      'Python Flask backend with PostgreSQL database',
+      'n8n workflow automation for alert processing',
+      'Real-time dashboard with on-prem and cloud alerts'
+    ],
+    status: 'In Development',
+    isInternship: true,
+    icon: ChartBarIcon,
+    gradient: 'from-accent-500 to-primary-500',
+    impact: 'Unified monitoring solution bringing organization-wide alerts to a single dashboard'
+  },
+  {
+    id: 3,
     title: 'OpenWebUI RAG Chatbot Platform',
     description: 'Production-ready AI chatbot with Retrieval-Augmented Generation on Amazon EKS. Terraform-managed infrastructure serving intelligent document queries with enterprise reliability.',
     category: 'AI/DevOps',
@@ -51,7 +69,7 @@ const projects = [
     impact: 'Enterprise-grade AI platform with scalable Kubernetes infrastructure'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Course Schedule Management System',
     description: 'Engineered DFS backtracking algorithm in microservices architecture for conflict-free timetables serving 500+ users with 99% constraint satisfaction.',
     category: 'Full-Stack',
@@ -69,7 +87,7 @@ const projects = [
     impact: 'Served 500+ users with 99% constraint satisfaction and automated scheduling'
   },
   {
-    id: 4,
+    id: 5,
     title: 'NexStore E-Commerce Platform',
     description: 'Built comprehensive e-commerce platform with React.js frontend, Node.js/MongoDB backend, and JWT-based authentication with secure payment integration.',
     category: 'Full-Stack',
