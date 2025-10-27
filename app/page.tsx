@@ -23,7 +23,7 @@ export default function Home() {
             className="inline-flex items-center gap-2 bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-full px-4 py-2 mb-8"
           >
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-            <span className="text-green-700 text-sm font-medium">Available for opportunities</span>
+            <span className="text-green-700 text-sm font-medium">Available for software engineering roles</span>
           </motion.div>
 
           {/* Main Heading */}

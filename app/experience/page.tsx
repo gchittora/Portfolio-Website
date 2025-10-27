@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { 
   BriefcaseIcon,
   AcademicCapIcon,
@@ -17,6 +18,7 @@ const timeline = [
     title: 'Platform Engineer Intern',
     company: 'EagleView',
     companyUrl: 'https://www.eagleview.com/',
+    companyLogo: '/logos/eagleview.svg',
     location: 'Hybrid',
     period: 'June 2025 - Present',
     duration: '6+ months',
@@ -37,6 +39,7 @@ const timeline = [
     type: 'work',
     title: 'Payments Partnership Intern',
     company: 'TransFi',
+    companyLogo: '/logos/transfi.jpg',
     location: 'Remote',
     period: 'Mar 2025 - May 2025',
     duration: '3 months',
@@ -53,10 +56,11 @@ const timeline = [
     gradient: 'from-green-500 to-emerald-500'
   },
   {
-    id: 2,
+    id: 3,
     type: 'education',
     title: 'B.Tech Computer Science & Engineering',
     company: 'The LNM Institute of Information Technology (LNMIIT)',
+    companyLogo: '/logos/lnmiit.png',
     location: 'Jaipur, Rajasthan',
     period: '2021 - 2025',
     duration: '4 years',
@@ -121,9 +125,22 @@ export default function Experience() {
                 >
                   {/* Timeline Dot */}
                   <div className="relative z-10">
-                    <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${item.gradient} flex items-center justify-center shadow-lg`}>
-                      <Icon className="w-8 h-8 text-white" />
-                    </div>
+                    {item.companyLogo ? (
+                      <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-lg p-2">
+                        <div className="relative w-full h-full">
+                          <Image
+                            src={item.companyLogo}
+                            alt={`${item.company} logo`}
+                            fill
+                            className="object-contain"
+                          />
+                        </div>
+                      </div>
+                    ) : (
+                      <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${item.gradient} flex items-center justify-center shadow-lg`}>
+                        <Icon className="w-8 h-8 text-white" />
+                      </div>
+                    )}
                     {item.status === 'current' && (
                       <div className="absolute -top-1 -right-1 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center animate-pulse">
                         <div className="w-2 h-2 bg-white rounded-full" />

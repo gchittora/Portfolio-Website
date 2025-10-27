@@ -126,7 +126,7 @@ export default function About() {
                   </p>
                   
                   <p className="mb-4">
-                    Currently, I'm 3 months into my 6-month internship at <a href="https://www.eagleview.com/" target="_blank" rel="noopener noreferrer" className="text-primary-600 font-semibold hover:text-primary-700 underline">EagleView</a> as a Platform Engineer Intern. This experience has been incredible, allowing me to work on real-world 
+                    Currently, I'm 6 months into my 6-month internship at <a href="https://www.eagleview.com/" target="_blank" rel="noopener noreferrer" className="text-primary-600 font-semibold hover:text-primary-700 underline">EagleView</a> as a Platform Engineer Intern. This experience has been incredible, allowing me to work on real-world 
                     challenges and contribute to meaningful projects that impact the company's infrastructure.
                   </p>
                   

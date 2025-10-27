@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { 
+import {
   EnvelopeIcon,
   MapPinIcon,
   UserIcon,
@@ -55,7 +55,7 @@ export default function Contact() {
             Get In <span className="gradient-text">Touch</span>
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            I'm always open to discussing new opportunities, collaborations, or just having a 
+            I'm always open to discussing software engineering roles, new opportunities, collaborations, or just having a
             conversation about technology and platform engineering.
           </p>
         </motion.div>
@@ -75,23 +75,22 @@ export default function Contact() {
                 transition={{ duration: 0.6, delay: 0.2 + (index * 0.1) }}
                 className="glass rounded-2xl p-6 card-hover text-center group"
               >
-                <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${
-                  index === 0 ? 'from-red-500 to-orange-500' :
+                <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${index === 0 ? 'from-red-500 to-orange-500' :
                   index === 1 ? 'from-blue-500 to-indigo-500' :
-                  index === 2 ? 'from-gray-700 to-gray-900' :
-                  'from-green-500 to-emerald-500'
-                } flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                    index === 2 ? 'from-gray-700 to-gray-900' :
+                      'from-green-500 to-emerald-500'
+                  } flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                   <Icon className="w-8 h-8 text-white" />
                 </div>
-                
+
                 <h3 className="text-lg font-bold mb-2 group-hover:text-primary-400 transition-colors">
                   {method.name}
                 </h3>
-                
+
                 <p className="text-gray-700 text-sm mb-3 break-all">
                   {method.value}
                 </p>
-                
+
                 <p className="text-gray-600 text-xs">
                   {method.description}
                 </p>
@@ -110,26 +109,26 @@ export default function Contact() {
           <div className="glass rounded-2xl p-8 text-center">
             <div className="flex items-center justify-center gap-2 mb-4">
               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-              <span className="text-green-400 font-semibold text-lg">Available for Opportunities</span>
+              <span className="text-green-400 font-semibold text-lg">Available for Software Engineering Roles</span>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="flex items-center justify-center gap-3">
                 <BuildingOfficeIcon className="w-6 h-6 text-primary-400" />
                 <span className="text-gray-800">Platform Engineer Intern at EagleView</span>
               </div>
-              
+
               <div className="flex items-center justify-center gap-3">
                 <MapPinIcon className="w-6 h-6 text-accent-400" />
                 <span className="text-gray-800">Based in Bangalore, India</span>
               </div>
             </div>
-            
+
             <div className="bg-gradient-to-r from-primary-500/10 to-accent-500/10 border border-primary-500/20 rounded-xl p-6">
               <p className="text-gray-800 leading-relaxed">
-                I'm currently completing my internship at EagleView and will be graduating in 2025. 
-                I'm actively looking for full-time opportunities in <span className="text-primary-400 font-medium">platform engineering</span>, 
-                <span className="text-accent-400 font-medium"> cloud architecture</span>, and <span className="text-primary-400 font-medium">DevOps roles</span>.
+                I'm currently completing my internship at EagleView and will be graduating in 2025.
+                I'm actively looking for full-time <span className="text-primary-400 font-medium">software engineering roles</span>, particularly in <span className="text-primary-400 font-medium">platform engineering</span>,
+                <span className="text-accent-400 font-medium"> cloud architecture</span>, and <span className="text-primary-400 font-medium">DevOps</span>.
               </p>
             </div>
           </div>

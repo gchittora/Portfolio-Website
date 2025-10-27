@@ -130,7 +130,7 @@ export default function Footer() {
                   <span className="block text-sm">Status</span>
                   <span className="inline-flex items-center gap-1">
                     <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse block" />
-                    Available for opportunities
+                    Available for software engineering roles
                   </span>
                 </div>
               </div>
@@ -139,24 +139,14 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="text-gray-700 text-sm flex items-center gap-1"
-          >
-            Made with <HeartIcon className="w-4 h-4 text-red-500" /> by Garvit Chittora
-          </motion.p>
-          
+        <div className="mt-12 pt-8 border-t border-gray-800 flex justify-end items-center">
           <motion.button
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
             onClick={scrollToTop}
-            className="mt-4 sm:mt-0 w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center text-gray-700 hover:text-white hover:bg-primary-600 transition-all duration-300 group"
+            className="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center text-gray-700 hover:text-white hover:bg-primary-600 transition-all duration-300 group"
           >
             <ArrowUpIcon className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
           </motion.button>
